@@ -1,0 +1,215 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0f8fda;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+* {
+  scroll-behavior: smooth !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #7f8c8d;
+}
+.goTop {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  z-index: 999;
+  right: 3rem;
+  bottom: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0f8fda;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  color: black !important;
+  text-decoration: none !important;
+}
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+  transition: 0.8s;
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  .product .btn {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .custom span {
+    left: 95% !important;
+  }
+  .profile-details {
+    font-size: 1rem;
+  }
+  .marginCustom {
+    margin-right: 0rem !important;
+  }
+  .cartCustom {
+    flex-direction: column;
+  }
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+.border-main {
+  border: 1px solid var(--main-color);
+  border-radius: 2px;
+  padding: 5px 8px;
+}
+.border-main:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.brand:hover {
+  background-color: var(--main-color);
+  transition: 0.8s;
+  color: #fff;
+}
+.brand:hover img {
+  transform: scale(1.1);
+}
+.favIcon {
+  display: none;
+}
+.product:hover .favIcon {
+  display: block;
+}
+.activeFav {
+  color: var(--main-color);
+}
+.border-left-main {
+  border-left: 5px solid var(--main-color) !important;
+}
+.border-left-visa {
+  border-left: 5px solid #0eb2cf !important;
+}
+.text-visa {
+  color: #0eb2cf;
+}
+.customShadow {
+  box-shadow: 0px 0px 9px 0px #7f8c8d;
+}
+.appSection {
+  text-align: right;
+}
+.footerPaymnet {
+  display: inline;
+}
+.catItem {
+  background-color: var(--main-color);
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+.catItem:hover {
+  background-color: #f2efef;
+  color: var(--main-color);
+}
+.navbar-nav .active {
+  color: var(--main-color) !important;
+  font-weight: bold;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+}
+.AuthIcon {
+  font-size: 10rem;
+}
+.w-25.login {
+  width: 100% !important;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-nav .border-1 {
+    border: 0 !important;
+  }
+  .navbar-nav .top-0 {
+    top: 14px !important;
+  }
+  .appSection {
+    text-align: left;
+  }
+  .footerPaymnet {
+    display: block;
+  }
+  .appBtn {
+    display: block !important;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #cartUser {
+    text-align: left !important;
+  }
+  .AuthIcon {
+    font-size: 5rem;
+  }
+}
+.socialMedia {
+  list-style-type: none;
+}
+.socialMedia i {
+  font-size: 2rem;
+}
+.facebook {
+  color: #3b5998;
+}
+.linkedin {
+  color: #007bb6;
+}
+.twitter {
+  color: #55acee;
+}
+.google {
+  color: #db4a39;
+}
+.logout,
+.login,
+.registerBtn {
+  border: 1px solid #007bb6;
+}
+.marginCustom {
+  margin-right: 1.5rem;
+}
+.navbar-brand{
+  padding-top: 0 !important;
+}
